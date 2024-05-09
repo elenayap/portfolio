@@ -1,0 +1,200 @@
+.content-wrapper {
+  font-family: "Lora", serif;
+  font-weight: 400;
+}
+
+
+
+ .top-container {
+    position: relative;
+    width:100vw;
+    height: 100vh;
+ }
+
+
+.background1 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+
+ .title-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 40%;
+    transform: translate(-0%, -0%);
+    text-align:center;
+    color: white;
+ }
+
+.button-bar {
+   position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+    left: 40%;
+    margin-top: 30px;
+    color: white;
+}
+
+ h1{
+    padding-bottom: 10px;
+ }
+
+ .second-container{
+   position: relative;
+   width:100vw;
+   height: 100vh;
+}
+ 
+ /* .second-container{
+    position: relative;
+ } */
+
+ .background2 {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+}
+
+ .about {
+    position: absolute;
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    top: 30%;
+    left: 50%;
+    color: white;
+    width: 50%;
+ }
+
+ .about p {
+    max-width: 60%; 
+}
+
+
+.card-cover {
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position: center; 
+  }
+
+  .custom-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:40px;
+  }
+
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+
+
+/* For screens smaller than 1024px ipad size */
+ @media screen and (max-width: 1024px) {
+   .title-text {
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center; /* Center text for smaller screens */
+   }
+   
+   .button-bar {
+     top: 60%; /* Adjust button bar position for smaller screens */
+     left: 50%;
+     transform: translateX(-50%);
+   }
+   
+   .about {
+     top: 50%; /* Adjust about section position for smaller screens */
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 80%; /* Adjust width for smaller screens */
+     text-align: center; /* Center text for smaller screens */
+   }
+ 
+   .about p {
+     text-align: center; /* Center-align paragraphs */
+     margin: auto; /* Center paragraphs horizontally */
+   }
+   
+   .custom-cards {
+     flex-direction: column; /* Stack cards vertically for smaller screens */
+     align-items: center; /* Center cards horizontally for smaller screens */
+   }
+   
+   .card {
+     width: 80%; /* Adjust card width for smaller screens */
+   }
+ 
+   footer.row {
+     flex-direction: column; /* Stack columns vertically */
+     padding-left: 10%; /* Add padding to the left */
+   }
+ 
+   footer h3 {
+     text-align: left; /* Align "Contact Me" heading to the left */
+     margin-bottom: 20px; /* Add space below the heading */
+   }
+ }
+
+
+
+  /* For screens smaller than 768px phone size */
+@media screen and (max-width: 768px) {
+   .title-text {
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center; /* Center text for smaller screens */
+   }
+   
+   .button-bar {
+     top: 60%; /* Adjust button bar position for smaller screens */
+     left: 50%;
+     transform: translateX(-50%);
+   }
+   
+   .about {
+     top: 50%; /* Adjust about section position for smaller screens */
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 80%; /* Adjust width for smaller screens */
+     text-align: center; /* Center text for smaller screens */
+   }
+
+   .about p {
+      text-align: center;
+      margin: auto;
+    
+   }
+   
+   .custom-cards {
+     flex-direction: column; /* Stack cards vertically for smaller screens */
+     align-items: center; /* Center cards horizontally for smaller screens */
+   }
+   
+   .card {
+     width: 80%; /* Adjust card width for smaller screens */
+   }
+
+   footer {
+      flex-direction: column; /* Stack columns vertically */
+      padding-left: 10%;
+    }
+
+    footer h3 {
+      text-align: center;
+    }
+ }
+
+ 
